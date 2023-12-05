@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    {{moment.include_moment()}}
+</head>
+<body>
+
+    
+    <p>Current date and time : {{ moment().format('MMMM Do YYYY, h:mm:s a') }}</p>
+    <p>Date : {{ moment().format('LL') }}</p>
+     <p> Sudip  {{ moment(date).fromNow() }}</p>
+</body>
+</html>

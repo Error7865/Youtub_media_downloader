@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='you_wide.css')}}" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="{{url_for('static', filename='you_min.css')}}" media="screen and (max-width: 799px)">
+    <!-- <link rel="stylesheet" href="/app/static/you_wide.css"> -->
+    <link rel="shortcut icon" type="image/ico" href="{{url_for('static', filename='favicon.ico')}}">
+
+    <title>Download</title>
+    <style>
+        h3{
+            color: rgb(92, 10, 10);
+        }
+    </style>
+</head>
+<body>
+    
+        {% include 'base.html'%}
+    {%block content%}
+
+    
+
+    <main>
+        {%for messa in get_flashed_messages()%}
+        <h4 align="center">{{messa}}</h4>
+        {% endfor %}
+        <form action="/you" method="post" enctype="multipart/form-data">
+            {{fo.csrf_token}}
+            <h3 align="center">
+                <!-- <input type="text" name="link" id="link"> -->
+                {{fo.link()}}
+                <input type="submit" value="Generate" id="submit">
+            </h3>
+        </form>
+        <h3 align="center">{{info['title']}} &hyphen; {{info['author']}}</h3>
+
+        <div id="container">
+            <ul id="video">
+        {% if video !=[] %}
+        <h4>Videos</h4>
+
+                    {{down.csrf_token}}
+                {% for i in video %}
+                    {#% down.sub.label=i %#}
+                    <li>{{v_type[video[i]]}} &ThickSpace;<a href="/you?link={{video[i]}}", class="click">{{i}}</a> &ThickSpace;{{down.itag(value=video[i])}}</li>
+                {% endfor %}
+        
+        
+                
+        {% endif %}
+            </ul>
+        
+            <ul id="audio">
+        {% if audio !=[] %}
+        <h4>Audios</h4>
+                
+                    {#{down.csrf_token}#}
+                {% for i in audio %}
+                    {#% down.sub.label=i %#}
+                    <li>{{a_type[audio[i]]}} &ThickSpace; <a href="/you?link={{audio[i]}}" class="click">{{i}}</a> &ThickSpace;{{down.itag(value=audio[i])}}</li>
+                {% endfor %}
+        
+        
+
+        {% endif %}
+            </ul>
+        </div>
+
+    </main>
+    
+    <footer>
+        <h5 align="center">This website  create for some testing.
+            <br>If anything you anonymous found please <a href="">report</a> us 
+        </h5>
+    </footer>
+    {% endblock %}
+
+    
+</body>
+</html>

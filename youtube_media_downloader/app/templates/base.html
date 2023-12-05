@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <style>
+     header{
+    margin-bottom: 0;
+    padding: 0;
+        }
+    header>ul{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        /* border: 2px solid magenta; */
+    }
+
+    header>ul>li{
+        margin: 5px;
+    }
+
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .sublist{
+        /* border: 2px solid orangered; */
+        margin-left: 73%;
+    }
+
+    .sublist>ul{
+        list-style: none;
+        display: flex;
+    }
+
+    .sublist>ul>li{
+        margin: 6px;
+    }
+
+     a{
+        text-decoration: none;
+        font-family: 'fa';
+        font-weight: 700;
+        color: grey;
+
+    } 
+
+    /* header end  */
+    </style>
+</head>
+<body>
+        <header>
+            <ul>
+                <li><a  href=""><img id="logo" src="{{url_for('static', filename='images/logo.png')}}" alt="logo"></a></li>
+                <div class="sublist" >
+                    <ul>
+                        <li class="side"><a href="/about">about</a></li>
+                        <li class="side"><a href="/contact">contact</a></li>
+                        <li class="side"><a href="/you">youtube</a></li>
+
+                    </ul>
+                </div>
+            </ul>
+        </header>
+        {% block content %}
+        {% endblock %}
+
+</body>
+</html>

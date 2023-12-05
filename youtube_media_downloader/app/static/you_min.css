@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.sublist{
+    margin-top: 1.5em;
+    margin-left: 20% !important;
+}
+
+    /* main portion start here  */
+main{
+    height: 80vh;
+    background-color: rgb(220, 238, 255);
+    margin-top: -2em;
+    margin-right: -1em;
+}
+
+#link{
+    width: 10em;
+    height: 1em;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    font-size: 15px;
+    /* font-weight: bold; */
+    /* color:  magenta; */
+    margin-top: 10em;
+
+}
+
+#link:hover{
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: whitesmoke;
+    
+}
+
+#submit{
+    width: 5em;
+    height: 2em;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    margin: -1em 0 0 -0.3em;
+    padding: 3px;
+    font-size: 10px;
+    background-color: orangered;
+    color: whitesmoke;
+
+}
+
+#submit:hover, #submit:focus{
+    background-color: whitesmoke;
+    color: orangered;
+}
+
+.click{
+    width: 200px;
+    height: 50px;
+    color: antiquewhite;
+    padding: 5px;
+    background-color: crimson;
+    box-shadow: 5px 5px 4px silver;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    margin: 15px;
+}
+.click:hover, .click:focus{
+    width: 200px;
+    height: 50px;
+    color: crimson;
+    padding: 5px;
+    background-color: antiquewhite;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+#video>li{
+    margin: 15px;
+}
+
+#audio>li{
+    margin: 15px;
+}
+
+/* footer start  */
+
+footer{
+    background: rgb(31, 30, 30);
+    padding: 5px;
+    /* margin: 0; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: -1.5em;
+}
+
+footer>h5{
+    color: white;
+}
+
+footer>a{
+    text-decoration: none;
+    color: white;
+    font-family: none;
+}
+
+/* end footer  */
+
+#container{
+    /* border: 2px solid  orangered; */
+    /* border-radius: 5px; */
+    display: flex;
+    height: 18em;
+}
+
+#video{
+    list-style: none;
+    margin-left: 15%;
+    margin-right: 3em;
+}
+
+#sub{
+
+    background-color: maroon;
+    margin: 5px;
+    border: 2px solid maroon;
+    border-radius: 4px;
+    box-shadow: 5px 5px 3px darkgrey;
+    color: azure;
+}
+
+#sub:active{
+    position: relative;
+    left: 4px;
+    top: 4px;
+    box-shadow: none;
+}
+
+h4{
+    color: brown;
+}
+
+    /* audio start  */
+#audio{
+    list-style: none;
+}
+
+    /* audio end  */

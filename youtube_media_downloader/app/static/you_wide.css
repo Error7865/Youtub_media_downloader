@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+main{
+    height: 80vh;
+    background-color: rgb(220, 238, 255);
+    /* margin-top: -2em; */
+    /* margin-right: -1em; */
+    margin: -2em -1em 0 -1em;
+}
+#link{
+    width: 20em;
+    height: 2em;
+    border: 2px solid magenta;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color:  magenta;
+    margin-top: 5em;
+
+}
+
+#link:hover{
+    border: 2px solid magenta;
+    background-color: magenta;
+    color: whitesmoke;
+    
+}
+
+#submit{
+    width: 10em;
+    height: 2.3em;
+    border: 2px solid magenta;
+    border-radius: 5px;
+    margin: 0 0 0 -0.3em;
+    font-size: 20px;
+    background-color: magenta;
+    color: whitesmoke;
+
+}
+#video>li{
+    margin: 25px;
+}
+
+#audio>li{
+    margin: 25px;
+}
+
+.click{
+    width: 200px;
+    height: 50px;
+    color: antiquewhite;
+    padding: 5px;
+    background-color: crimson;
+    box-shadow: 5px 5px 4px silver;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    margin: 15px;
+}
+.click:hover, .click:focus{
+    width: 200px;
+    height: 50px;
+    color: crimson;
+    padding: 5px;
+    background-color: antiquewhite;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+
+#submit:hover, #submit:focus{
+    background-color: whitesmoke;
+    color: magenta;
+}
+
+/* footer start  */
+
+footer{
+    background: rgb(31, 30, 30);
+    padding: 5px;
+    /* margin: 0; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: -1em;
+    margin-left: -1em;
+}
+
+footer>h5{
+    color: white;
+}
+
+footer>a{
+    text-decoration: none;
+    color: white;
+    font-family: none;
+}
+
+/* end footer  */
+
+/* Download button  */
+
+#container{
+    /* border: 2px solid  orangered; */
+    /* border-radius: 5px; */
+    display: flex;
+    height: 25em;
+}
+
+#video{
+    list-style: none;
+    margin-left: 30%;
+    margin-right: 5em;
+}
+#sub{
+
+    background-color: green;
+    margin: 5px;
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px darkgrey;
+}
+
+#sub:active{
+    position: relative;
+    left: 4px;
+    top: 4px;
+    box-shadow: none;
+}
+h4{
+    color: brown;
+}
+
+    /* audio start  */
+#audio{
+    list-style: none;
+}

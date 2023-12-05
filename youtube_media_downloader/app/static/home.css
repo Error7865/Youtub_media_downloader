@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+    /* header start  */
+/* @font-face {
+    font-family: fa;
+    src: url({{url_for('static', filename='font/Ubuntu.ttf')}});
+} */
+
+header{
+    margin-bottom: 0;
+    padding: 0;
+}
+header>ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    /* border: 2px solid magenta; */
+}
+
+header>ul>li{
+    margin: 5px;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+.sublist{
+    /* border: 2px solid orangered; */
+    margin-left: 75%;
+}
+
+.sublist>ul{
+    list-style: none;
+    display: flex;
+}
+
+.sublist>ul>li{
+    margin: 6px;
+}
+
+/* a{
+    text-decoration: none;
+    font-family: 'fa';
+    font-weight: 700;
+    color: grey;
+
+} */
+
+    /* header end  */
+
+    /* main start  */
+main>h2{
+    color: whitesmoke;
+    padding: 2em 0 0 0;
+    font-size: 4em;
+}
+
+#button{
+    width: 150px;
+    height: 20px;
+    background-color: greenyellow;
+    padding: 5px;
+    border-radius: 5px;
+    color: royalblue;
+    box-shadow: 4px 4px 3px darkgrey;
+}
+
+#button:hover{
+    color: grey;
+}
+#button:active{
+    /* translate: 2px 2px; */
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+}
+
+    /* main end  */
+
+footer{
+    background: rgb(31, 30, 30);
+    padding: 5px;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer>h5{
+    color: white;
+}
+
+footer>a{
+    text-decoration: none;
+    color: white;
+    font-family: none;
+}

@@ -1,0 +1,18 @@
+file--
+    |
+    |
+    |-run.py
+    |-app
+        |
+        |-downloads(It will contain file that will downloads after click download)
+        |-static(It contain all static files)
+        |-templates(It contain all templates for that project)
+        |-init.py
+        |-error.py(Not so import .Try to ignore that)
+        |-forms.py(It contain all html forms that requird in that project)
+        |-you   (That's so important it contain most import code of that project)
+            |-__init__.py(as requird)
+            |-you.py(observe clearfully)
+
+
+requird all contain requirment.txt(Flask, requests, Pytube, mutagen, moviepy, Flask-WTF)

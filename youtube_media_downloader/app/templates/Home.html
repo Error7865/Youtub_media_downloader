@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="{{url_for('static', filename='mobile.css')}}" media="screen and (max-width: 799px)">
+    <link rel="shortcut icon" type="image/ico" href="{{url_for('static', filename='favicon.ico')}}">
+    <title>Home</title>
+    <style>
+    @font-face {
+        font-family: fa;
+        src: url("{{url_for('static', filename='font/Ubuntu.ttf')}}");
+    }
+
+    a{
+        text-decoration: none;
+        font-family: 'fa';
+        font-weight: 700;
+        color: grey;
+
+    }
+
+    @media screen and (min-width: 800px){
+        main{
+        height: 40em;
+        background: url("{{url_for('static', filename='images/triangles.png')}}"), no-repeat;
+        border-radius: 10px;
+        margin: -4em 0;
+
+        }
+    }
+
+    @media screen and (max-width: 799px){
+        main{
+    width: 100%;
+    height: 40em;
+    background: url("{{url_for('static', filename='images/triangles.png')}}"), no-repeat;
+    border-radius: 10px;
+    margin: -3em 0 ;
+
+}
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a  href=""><img id="logo" src="{{url_for('static', filename='images/logo.png')}}" alt="logo"></a></li>
+            <div class="sublist" >
+                <ul>
+                    <li class="side"><a href="/about">about</a></li>
+                    <li class="side"><a href="/contact">contact</a></li>
+                    <li class="side"><a href="/you">youtube</a></li>
+                </ul>
+            </div>
+        </ul>
+    </header>
+    <main>
+        <h2 align="center">Hello! My friends </h2>
+        <p align="center" ><a href="" id="button">Click here</a></p>
+    </main>
+    <footer>
+        <h5 align="center">This website  create for some testing.
+            <br>If anything you anonymous found please <a href="">report</a> us
+        </h5>
+    </footer>
+
+</body>
+</html>
